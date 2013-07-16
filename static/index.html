@@ -17,23 +17,21 @@
 <script src="https://d396qusza40orc.cloudfront.net/startup%2fcode%2fbootstrap.js"></script>
 
 <!--(02)-->
-<!--<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic"" rel="stylesheet" type="text/css">-->
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
 
 <style type="text/css">
-
 /* large desktop */
 @media (min-width: 980px) {
-  <!--(01)-->
-  <!--body {-->
-    <!--padding-top: 60px;-->
-  <!--}-->
+  body {
+    padding-top: 60px;
+  }
   <!--(04)-->
-  <!--.linediv-l {-->
-    <!--border-right: 1px white solid;-->
-  <!--}-->
-  <!--.linediv-r {-->
-    <!--border-left: 1px white solid;-->
-  <!--}-->
+  .linediv-l {
+    border-right: 1px white solid;
+  }
+  .linediv-r {
+    border-left: 1px white solid;
+  }
 }
 
 /* landscape phones and down */
@@ -54,22 +52,22 @@
 
 /* main body and headings */
 <!--(02)-->
-<!--body {-->
-  <!--font-family: 'Open Sans', Helvetica, Arial, sans-serif;-->
-<!--}-->
-<!--.heading, .subheading {-->
-  <!--font-family: 'Ubuntu', Helvetica, Arial, sans-serif;-->
-  <!--text-align: center;-->
-<!--}-->
-<!--p.lead {-->
-  <!--padding-top: 1.5%;-->
-  <!--font-size: 24px;-->
-  <!--line-height: 30px;-->
-<!--}-->
-<!--p {-->
-  <!--font-size: 18px;-->
-  <!--line-height: 24px;-->
-<!--}-->
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.heading, .subheading {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+p.lead {
+  padding-top: 1.5%;
+  font-size: 24px;
+  line-height: 30px;
+}
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
 
 /* video pitch and action */
 <!--(03)-->
@@ -139,64 +137,59 @@
   </div> <!-- .navbar-inner -->
 </div> <!-- .navbar -->
 
-<!--<div class="container">-->
-  <!--<div class="row navigation">-->
-    <!--<div class="span2 logo">-->
-      <!--Logo-->
-    <!--</div>-->
-    <!--<div class="span6 blank">-->
-      <!--Blank-->
-    <!--</div>-->
-    <!--<div class="span4 about">-->
-      <!--About-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="row heading">-->
-    <!--<div class="span12">-->
-      <!--<h1>Bitstarter Title</h1>-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="row subheading">-->
-    <!--<div class="span12">-->
-      <!--<p class="lead">This is my first bitstarter project.</p>-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="row pitch">-->
-    <!--<div class="span6 video">-->
-      <!--Video-->
-    <!--</div>-->
-    <!--<div class="span6">-->
-      <!--<div class="thermometer">-->
-        <!--Thermometer-->
-      <!--</div>-->
-      <!--<div class="order">-->
-        <!--Order-->
-      <!--</div>-->
-      <!--<div class="social">-->
-        <!--Social-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="row section1">-->
-    <!--<div class="span12">-->
-      <!--Marketing Section 1-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="row section2">-->
-    <!--<div class="span12">-->
-      <!--Marketing Section 2-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="row faq">-->
-    <!--<div class="span12">-->
-      <!--FAQ-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="row footer">-->
-    <!--<div class="span12">-->
-      <!--Footer-->
-    <!--</div>-->
-  <!--</div>-->
+<!-- we use row-fluid inside containers to achieve a resizable layout -->
+<!-- http://blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+<!-- http://stackoverflow.com/questions/12269335/is-it-ok-to-have-a-row-fluid-inside-a-row/12270322#12270322 -->
+<div class="container">
+  <!-- font and paired font of .heading/.subheading and body from Google Fonts -->
+  <!-- http://www.google.com/fonts/specimen/Ubuntu -->
+  <!-- http://www.google.com/fonts/specimen/Ubuntu#pairings -->
+  <div class="row-fluid heading">
+    <div class="span12">
+      <h1>Product</h1>
+    </div>
+  </div>
+  <div class="row subheading">
+    <div class="span12">
+      <p class="lead">This is my first bitstarter project.</p>
+    </div>
+  </div>
+  <div class="row pitch">
+    <div class="span6 video">
+      Video
+    </div>
+    <div class="span6">
+      <div class="thermometer">
+        Thermometer
+      </div>
+      <div class="order">
+        Order
+      </div>
+      <div class="social">
+        Social
+      </div>
+    </div>
+  </div>
+  <div class="row section1">
+    <div class="span12">
+      Marketing Section 1
+    </div>
+  </div>
+  <div class="row section2">
+    <div class="span12">
+      Marketing Section 2
+    </div>
+  </div>
+  <div class="row faq">
+    <div class="span12">
+      FAQ
+    </div>
+  </div>
+  <div class="row footer">
+    <div class="span12">
+      Footer
+    </div>
+  </div>
 </div>
 </body>
 </html>
