@@ -1,14 +1,19 @@
 {
   "name": "bitstarter",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "express": "2.5.x",
-    "cheerio": "0.12.x",
-    "commander": "1.2.x",
-    "restler": "2.0.x"
+    "express": "3.3.x",
+    "async": "0.2.x",
+    "sequelize": "2.0.x",
+    "pg": "2.3.x",
+    "ejs": "0.8.x"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "0.10.x",
+    "npm": "1.2.x"
   }
 }
