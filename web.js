@@ -1,5 +1,6 @@
-// Define routes for simple SSJS web app. 
-// Writes Coinbase orders to database.
+// define routes for simple SSJS web app.
+// writes Coinbase orders to database.
+
 var async   = require('async'),
   express = require('express'),
   fs      = require('fs'),
@@ -12,20 +13,20 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 8080);
 
-// Render homepage (note trailing slash): example.com/
+// render homepage (note trailing slash): example.com/
 app.get('/', function(request, response) {
   var data = fs.readFileSync('index.html').toString();
   response.send(data);
 });
 
-// Render example.com/orders
+// render example.com/orders
 app.get('/orders', function(request, response) {
   global.db.Order.findAll().success(function(orders) {
     var orders_json = [];
     orders.forEach(function(order) {
       orders_json.push({id: order.coinbase_id, amount: order.amount, time: order.time});
     });
-    // Uses views/orders.ejs
+    // uses views/orders.ejs
     response.render("orders", {orders: orders_json});
   }).error(function(err) {
     console.log(err);
@@ -33,7 +34,7 @@ app.get('/orders', function(request, response) {
   });
 });
 
-// Hit this URL while on example.com/orders to refresh
+// hit this URL while on example.com/orders to refresh
 app.get('/refresh_orders', function(request, response) {
   https.get("https://coinbase.com/api/v1/orders?api_key=" + process.env.COINBASE_API_KEY, function(res) {
     var body = '';
@@ -75,7 +76,7 @@ db.sequelize.sync().complete(function(err) {
     throw err;
   } else {
     http.createServer(app).listen(app.get('port'), function() {
-      console.log("Listening on " + app.get('port'));
+      console.log("listening on " + app.get('port'));
     });
   }
 });
